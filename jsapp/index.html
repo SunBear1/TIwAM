@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple jQuery and Bootstrap Application</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Include jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Welcome to My App</h1>
+        <p id="para">This is some text.</p>
+        <button id="changeText" class="btn btn-primary">Change Text</button>
+    </div>
+
+    <script>
+    $(document).ready(function(){
+        $("#changeText").click(function(){
+            $("#para").text("The text has been changed.");
+        });
+    });
+    </script>
+</body>
+</html>
